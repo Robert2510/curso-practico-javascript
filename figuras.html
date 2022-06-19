@@ -13,6 +13,51 @@
         </h1>
         <p>Este es el primer taller del curso práctico de javascript </p>
     </header>
+    <section>
+        <h2>Calcula perímetro y área de un cuadrado.</h2>
+        <form>
+            <label for="inputCuadrado">
+                Escribe cúanto mide el lado del cuadrado:
+
+            </label>
+            <input type="number" id="inputCuadrado"/>
+
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular perímetro
+             </button>
+
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular área
+             </button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Calcula perímetro y área de un triángulo</h2>
+        <form>
+            <label for="inputPrimerLado">
+                Ingresa canto mide el primer lado
+            </label>
+            <input type="number" id="inputPrimerLado"/>
+            <label for="inputPrimerLado">
+                Ingresa cuanto mide segundo lado
+            </label>
+            <input type="number" id="inputSegundoLado"/>
+            <label for="inputBase">
+                Ingresa cuanto mide la base
+            </label>
+            <input type="number" id="inputBase"/>
+            <button type="button" onclick="calcularPerimetroTRiangulo()">
+                Calcular perímetro
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
+                Calcular área
+            </button>
+
+
+        </form>
+    </section>
+
     
     <script src="./figuras.js"></script>
     
