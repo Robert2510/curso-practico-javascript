@@ -127,6 +127,23 @@ function calcularAreaCuadrado(){
     const valueBase =parseInt(ladobase.value);
     const perimetro = perimetroTriangulo(valueA , valueB , valueBase);
         alert(perimetro);
+
+ }
+
+ function calcularAreaTriangulo(){
+    const ladobase = document.getElementById("inputBase");
+    const altura = document.getElementById("inputAltura");
+    const valueBase =parseInt(ladobase.value);
+    const valueAltura = parseInt(altura.value);
+    const area = areaTriangulo(valueBase,valueAltura);
+      alert(area);
+
+    
+
+
+ }
+
+ 
     
     
 
@@ -134,7 +151,7 @@ function calcularAreaCuadrado(){
 
     
        
- }
+ 
       
 
     
