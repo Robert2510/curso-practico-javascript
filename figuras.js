@@ -118,17 +118,28 @@ function calcularAreaCuadrado(){
 
 
 
- function calcularPerimetroTRiangulo(){
-    const primerLado = document.getElementById("inputPrimerlado");
- const segundoLado = document.getElementById("inputSegundoLado");
- const ladobase = document.getElementById("inputBase");
- const valueA = primerLado.value;
- const valueB= segundoLado.value;
- const valueBase = ladobase.value;
- const valorPerimetro= perimetroTriangulo(valueA,valueB,valueBase);
- alert(valorPerimetro);
+ function calcularPerimetroTriangulo(){
+    const primerLado = document.getElementById("inputPrimerLado");
+    const segundoLado = document.getElementById("inputSegundoLado");
+    const ladobase = document.getElementById("inputBase");
+    const valueA =parseInt(primerLado.value);
+    const valueB= parseInt(segundoLado.value);
+    const valueBase =parseInt(ladobase.value);
+    const perimetro = perimetroTriangulo(valueA , valueB , valueBase);
+        alert(perimetro);
+    
+    
 
-}
+    
+
+    
+       
+ }
+      
+
+    
+
+
 
 
 
