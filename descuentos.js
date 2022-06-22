@@ -12,12 +12,25 @@
 });
 */
 
-const descuento= 15;
-
-function calcularPrecioFinal(precio,decuento){
-    const porcentajeConDescuento = 100 - descuento;
-    const precioFinal = (precio * porcentajeConDescuento)/100;
 
 
+function calcularPrecioFinal(precio,descuento){
+    const porcentajeConDescuento =100- descuento;
+    const precioFinal =(precio * porcentajeConDescuento)/100;
+    return precioFinal;
+
+}
+
+
+
+function calcularPrecioReal(){
+    const inputPrecio = document.getElementById("inputPrecio");
+    const inputDescuento = document.getElementById("inputDescuento");
+    const precioValue =inputPrecio. value ;
+    const descuentoValue = inputDescuento.value;
+    const precioReal = calcularPrecioFinal(precioValue,descuentoValue);
+
+    const precioP= document.getElementById("precioConDescuento");
+    precioP.innerText = "El precio con descuento es: $" + precioReal ; 
 
 }
