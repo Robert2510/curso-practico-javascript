@@ -41,10 +41,6 @@ uruguay.push({
     salary: 800,
 });
 
-uruguay.push({
-    name: "Adrian",
-    salary: 1400,
-});
 
 uruguay.push({
     name: "Javier",

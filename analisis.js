@@ -4,14 +4,12 @@ const salarioUru = uruguay.map(function(habitant){
     }
 );
 
-
 const salarioUruSorted = salarioUru.sort(
     function(salaryA,salaryB){
         return salaryA - salaryB;
 
     }
 );
-
 
 function esPar(numero){
     return (numero % 2 ===0);
@@ -28,8 +26,6 @@ function calcularMediana(lista){
         return promedioLista;
     }
         
-
-
 function medianaSalary(lista){
     const mitad = parseInt(lista.length / 2);
 
@@ -46,4 +42,22 @@ function medianaSalary(lista){
     }
 }
 
-console.log (medianaSalary(salarioUruSorted));
+const medianaGralUru= medianaSalary(salarioUruSorted);
+
+// mediana top 10%
+
+const spliceStart = (salarioUruSorted.length *90)/100;
+const spliceCount = salarioUruSorted.length - spliceStart;
+
+const salaryTop10 = salarioUruSorted.splice(
+    spliceStart,
+    spliceCount,
+);
+
+const medianaTop10Uru = medianaSalary(salaryTop10);
+
+console.log({
+    medianaGralUru,
+    medianaTop10Uru,
+}
+);
